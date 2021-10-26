@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS employeemanagementsys_db;
 CREATE DATABASE IF NOT EXISTS employeemanagementsys_db;
 
 USE employeemanagementsys_db;
@@ -25,4 +26,5 @@ CREATE TABLE IF NOT EXISTS employee (
     manager_id INT DEFAULT NULL,
     FOREIGN KEY (role_id)
     REFERENCES role(id)
+    ON DELETE SET NULL
 );

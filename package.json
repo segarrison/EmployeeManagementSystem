@@ -1,0 +1,27 @@
+{
+  "name": "EmployeeManagementSystem",
+  "version": "1.0.0",
+  "description": "Command-line application to manage a company's employee database utilizing Node.js, inquirer, and MySQL.",
+  "main": "index.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.0",
+    "mysql2": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/segarrison/EmployeeManagementSystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/segarrison/EmployeeManagementSystem/issues"
+  },
+  "homepage": "https://github.com/segarrison/EmployeeManagementSystem#readme"
+}
