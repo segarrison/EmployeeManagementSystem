@@ -1,10 +1,10 @@
-INSERT INTO department (dep_name)
+INSERT INTO department (dept_name)
 VALUES ("Human Resources"),
        ("Engineering"),
        ("Information Technology"),
        ("Business");
 
-INSERT INTO role (title, salary, dep_id)
+INSERT INTO role (title, salary, dept_id)
 VALUES ("HR Manager", 70000.00, 1),
        ("HR Team", 50000.00, 1),
        ("Engineering Manager", 120000.00, 2),
@@ -22,4 +22,4 @@ VALUES ("Leia", "Organa", 7, NULL),
        ("Luke", "Skywalker", 3, NULL),
        ("Wedge", "Antilles", 4, 5),
        ("Chewbacca", "Wookie", 5, NULL),
-       ("R2", "D2", 6, 7 );
+       ("R2", "D2", 6, 7);
