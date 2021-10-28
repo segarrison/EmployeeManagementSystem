@@ -69,16 +69,55 @@ const addRoleQ = [
     {
         type: "list",
         message: "Which department does the role belong to?",
-        name: "roleDep",
+        name: "roleDept",
         //need to build this array
         choices: departments,
     },
 ];
 
-const addDepQ = [
+const addDeptQ = [
   {
     type: "input",
     message: "What is the name of the department?",
-    name: "newDep",
+    name: "newDept",
   },
 ];
+
+function runMenu(){
+  inquirer.prompt(dbMenu).then((selection) =>{
+    switch (selection.mainMenu){
+      case "View All Employees":
+        viewAllEmp();
+        break;
+
+      case "Add Employee":
+        addEmp();
+        break;
+      
+      case "Update Employee Role":
+        updateEmpRole();
+        break;
+
+      case "View All Roles":
+        viewAllRoles();
+        break;
+      
+      case "Add Role":
+        addRole();
+        break;
+      
+      case "View All Departments":
+        viewAllDept();
+        break;
+
+      case "Add Department":
+        addDept();
+        break;
+
+      case "Quit":
+        connection.end();
+        console.log("Thank you for using Employee Management System");
+        break;
+    }
+  })
+}
